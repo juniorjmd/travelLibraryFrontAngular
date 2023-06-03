@@ -1,0 +1,8 @@
+<li class="nav-item">
+    <a class="nav-link" [routerLink]="imagen.ruta">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" [class]="imagen.icon.class" viewBox="0 0 16 16">
+            <path *ngFor="let punto of imagen.icon.point" punto />
+          </svg> <span data-feather="file"> {{ imagen.name  }}</span>
+    </a>
+
+</li>

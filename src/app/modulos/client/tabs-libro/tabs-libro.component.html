@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem;min-height: 250px;">
+    <div class="card-body">
+        <h5 class="card-title">{{Libro.titulo}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{Libro.editorial?.nombre}}</h6>
+        <p class="card-text">{{Libro.sinopsis}}</p>
+
+        Autor(es)
+        <ul class="list-group list-group-flush">
+            <li *ngFor="let item of Libro.autores" class="list-group-item">{{item.nombre}} {{item.apellido}}</li>
+        </ul>
+
+    </div>
+</div>

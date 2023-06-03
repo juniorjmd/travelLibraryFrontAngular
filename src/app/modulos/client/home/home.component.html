@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1>libros Disponibles</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let libro of libros" class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">
+            <client-tabsLibro [Libro]="libro"></client-tabsLibro>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<ul class="list-group list-group-flush" *ngIf="editorial.libros!.length > 0; else elseBlock ">
+    <li *ngFor="let libro of editorial.libros" class="list-group-item">{{libro.titulo}} </li>
+
+</ul>
+<ng-template #elseBlock>
+    <div>
+        El autor {{editorial.nombre}} No posee libros registrados
+    </div>
+</ng-template>
